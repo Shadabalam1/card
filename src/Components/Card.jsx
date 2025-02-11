@@ -24,6 +24,7 @@ const Card = () => {
 
     }
   ]
+  const ramram = () => { alert('hello');};
 
   return (
     <div className=" w-full p-4 h-screen bg-zinc-200 flex justify-center gap-4 items-center ">
@@ -37,6 +38,7 @@ const Card = () => {
         <h1 className='font-semibold'>{elem.title}</h1>
         <p className=' text-xs  mt-5'>{elem.description}</p>
         <h3 className={`' ${elem.stock ? "bg-blue-400" : "bg-red-400"} mt-2 p-2 text-xs  rounded-md font-mono w-fit '`}>{elem.stock ? 'In stocK' : 'Out of stock'}</h3>
+        <button onClick={ramram} className='mt-2 p-2 text-xs  rounded-md font-mono w-fit bg-blue-600'>start</button>
       </div>
       
      
